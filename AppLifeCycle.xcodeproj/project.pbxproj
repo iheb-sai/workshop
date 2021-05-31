@@ -15,6 +15,7 @@
 		A23363232664F9A600854470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23363212664F9A600854470 /* LaunchScreen.storyboard */; };
 		A233632E2664F9A600854470 /* AppLifeCycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A233632D2664F9A600854470 /* AppLifeCycleTests.swift */; };
 		A23363392664F9A600854470 /* AppLifeCycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23363382664F9A600854470 /* AppLifeCycleUITests.swift */; };
+		A233638526656B6F00854470 /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A233638426656B6F00854470 /* WelcomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A23363342664F9A600854470 /* AppLifeCycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLifeCycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23363382664F9A600854470 /* AppLifeCycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifeCycleUITests.swift; sourceTree = "<group>"; };
 		A233633A2664F9A600854470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A233638426656B6F00854470 /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A23363162664F9A400854470 /* AppDelegate.swift */,
 				A23363182664F9A400854470 /* SceneDelegate.swift */,
 				A233631A2664F9A400854470 /* ViewController.swift */,
+				A233638426656B6F00854470 /* WelcomViewController.swift */,
 				A233631C2664F9A400854470 /* Main.storyboard */,
 				A233631F2664F9A600854470 /* Assets.xcassets */,
 				A23363212664F9A600854470 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				A233631B2664F9A400854470 /* ViewController.swift in Sources */,
 				A23363172664F9A400854470 /* AppDelegate.swift in Sources */,
 				A23363192664F9A400854470 /* SceneDelegate.swift in Sources */,
+				A233638526656B6F00854470 /* WelcomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
