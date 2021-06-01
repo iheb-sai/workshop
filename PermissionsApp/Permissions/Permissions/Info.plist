@@ -22,7 +22,11 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>I want to see you</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>I want to locate you</string>
 	<key>NSLocationUsageDescription</key>
+	<string>I want to locate you</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>I want to locate you</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>I want to hear you</string>

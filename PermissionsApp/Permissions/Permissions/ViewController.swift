@@ -8,11 +8,15 @@
 import UIKit
 import AVFAudio
 
-class ViewController: UIViewController {
-
+import CoreLocation
+class ViewController: UIViewController, CLLocationManagerDelegate{
+    
+    var locationManager: CLLocationManager?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
     }
     
     
@@ -33,6 +37,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func location(_ sender: Any) {
+
+        locationManager?.requestAlwaysAuthorization()
     }
     
     @IBAction func camera(_ sender: Any) {
