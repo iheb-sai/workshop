@@ -62,8 +62,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
-    @IBAction func notifications(_ sender: Any) {
-    }
-    
 }
 
