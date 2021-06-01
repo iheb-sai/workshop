@@ -26,19 +26,25 @@ class ViewController: UIViewController {
     }
     
     func randomImage(){
+        //Step1: Create a URL
         let url = URL(string: "https://dog.ceo/api/breeds/image/random")!
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { (data , response, error) in
+        //Step2:Create a request
+        let request = URLRequest(url: url)
+        //Step3: Create and Start a task
+        let task = URLSession.shared.dataTask(with: request) { (data , response, error) in
             //check errors
             if error == nil && data != nil {
-                //parse json
-                let decoder = JSONDecoder()
+                //Step4: Handle results
                 
                 do {
+                    let decoder = JSONDecoder()
                     let dataFeed = try decoder.decode(Model.self, from: data!)
                     print("This is the result --> \n \(dataFeed)")
-                    self.model = dataFeed
-                    self.image.load(url: URL(string:self.model!.message) ?? URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZk3y06bcooRBu224-A4IaLv3hRrK6AkTPjQ&usqp=CAU")!)
+                    DispatchQueue.main.async {
+                        self.model = dataFeed
+                        self.image.load(url: URL(string:self.model!.message) ?? URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZk3y06bcooRBu224-A4IaLv3hRrK6AkTPjQ&usqp=CAU")!)
+                    }
+                    
                     
                 } catch {
                     print("Error : \n \(error)")
@@ -51,7 +57,7 @@ class ViewController: UIViewController {
     @IBAction func buttonAction(_ sender: Any) {
         randomImage()
     }
-
+    
     
 }
 extension UIImageView {
